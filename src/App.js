@@ -1,23 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import React,{useEffect,useState} from  'react';
+import {Route} from 'react-router';
 
 function App() {
+  const [isMobile,setIsMobile] = useState(false);
+  useEffect(()=>{
+    console.log("Determining Screen Size");
+    let ua = navigator.userAgent;
+    console.log(ua);
+    let mobile = ua.match(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/gi)
+    console.log("Matches found: " + mobile);
+    mobile ? setIsMobile(true) : setIsMobile(false);
+  });
+
+  console.log("Is Mobile: " + isMobile);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     Hello
+      
     </div>
   );
 }
