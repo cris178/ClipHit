@@ -1,7 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import React,{useEffect,useState} from  'react';
-import {Route} from 'react-router';
+import {BrowserRouter as Router, Route, Redirect,Switch} from 'react-router-dom';
+import Desktop from "./components/desktopview/DesktopView";
+import Mobile from "./components/mobileview/MobileView";
 
 function App() {
   const [isMobile,setIsMobile] = useState(false);
@@ -15,12 +16,24 @@ function App() {
   });
 
   console.log("Is Mobile: " + isMobile);
+  //Can place divs in Router that will show in each page.
   return (
-    <div className="App">
-     Hello
-      
+    <div className="app">
+      <Router>
+        {
+          isMobile && (<Redirect  to="/Vods" />)
+        }
+        {
+          !isMobile && (<Redirect to="/about" />)
+        }
+        <Switch>
+          <Route path="/about"><Desktop /></Route>
+          <Route path="/Vods"><Mobile /></Route>
+        </Switch>
+      </Router>
     </div>
-  );
+    
+);
 }
 
 export default App;

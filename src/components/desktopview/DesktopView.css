@@ -1,0 +1,83 @@
+.DesktopView{
+    /*background-color: #212c3e; MIXER*/
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+}
+
+
+.hero{
+    width: 100vw;
+    height: 70vh;
+    display: block;
+    
+    background-color:  #1c1e26;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    padding: 0px;
+    margin: 0px;
+    padding-bottom: 0px;
+}
+
+nav{
+    display: inline-block;
+    padding-top:3vh;
+    color: #798491;
+}
+
+.title{
+    display: inline;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+
+.download{
+    display: inline;
+}
+
+ul{
+    padding: 0px;
+    margin-top: 40vh;
+}
+
+li{
+    list-style-type: none;
+}
+
+li > h1{
+    font-size: 3.5em;
+    font-weight: bolder;
+}
+
+.showCase{
+    display: block;
+    color:black;
+    background-color: red;
+}
+
+.otherApps{
+    height: 30vh;
+    width: 30vw;
+    float: left;
+}
+.callToAction{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: 15vh;
+    font-weight: 300;
+}
+
+
+.flow{
+    height: 30vh;
+    width: 70vw;
+    /*background-color: #798491;*/
+    float: right;
+}
