@@ -4,18 +4,16 @@
     height: 100vh;
     overflow-y: hidden;
     overflow-x: hidden;
-    
+    /*background-color: #f4f1ed;*/ 
 }
 
 
 .hero{
     width: 100vw;
     height: 70vh;
-    display: block;
-    
+    display: flex;
+    flex-direction: column;
     background-color:  #1c1e26;
-    padding-left: 10vh;
-    padding-right: 10vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -26,28 +24,57 @@ h1{
 }
 
 nav{
-    display: inline-block;
     padding-top:3vh;
+    padding-left: 10vh;
+    padding-right: 10vh;
     color: #798491;
 }
 
+.advert{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    height: 60vh;
+}
+
 .title{
-    display: inline;
-    color: whitesmoke;
+    color: #f4f1ed;
     font-weight: bolder;
+    display: inline;    
 }
 
 .download{
     display: inline;
+
+    background: linear-gradient(92.05deg, #BCA1F7 12.09%, #E577B4 42.58%, #FF7170 84.96%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
 }
 
 ul{
     padding: 0px;
-    margin-top: 40vh;
+    align-self: flex-end;
 }
 
 li{
     list-style-type: none;
+}
+
+.flourish{
+    display: block;
+    width: 3em;
+    height: 1em;
+    background-color: #e52854;
+}
+
+.advert > ul > li:first-child{
+    border-top: solid;
+    border-top-width: 0.1px;
+    border-top-color: plum;
 }
 
 li > h1{
@@ -72,6 +99,7 @@ li > h1{
     text-align: center;
     margin-top: 15vh;
     font-weight: 300;
+    font-weight: 400;
 }
 
 
@@ -80,4 +108,22 @@ li > h1{
     width: 70vw;
     /*background-color: #798491;*/
     float: right;
+    display:flex;
+    flex-direction: row;
+    
+}
+.logos{
+    flex-grow: 1;
+    align-self: center;
+    text-align: center;
+}
+
+.advertiseMessage{
+    flex-grow: 2;
+}
+
+.advertPhoto{
+    flex-grow: 2;
+    align-self: center;
+    text-align: center;
 }
