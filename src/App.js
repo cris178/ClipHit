@@ -18,7 +18,7 @@ function App() {
   console.log("Is Mobile: " + isMobile);
   //Can place divs in Router that will show in each page.
   return (
-    <div className="app">
+    <div className="App">
       <Router>
         {
           isMobile && (<Redirect  to="/Vods" />)

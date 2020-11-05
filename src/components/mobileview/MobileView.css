@@ -1,6 +1,5 @@
 .MobileView{
     background-color: #24292e;
     color: white;
-    width: 100vw;
-    height: 100vh;
+    position:relative;
 }

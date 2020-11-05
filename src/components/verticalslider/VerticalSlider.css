@@ -1,0 +1,26 @@
+.VerticalSlider{
+   
+    display: block;
+    overflow: hidden;
+}
+
+/*MOST IMPORTANT PART-NEEED TO SET SWIPER-CONTAINER SIZE IN ORDER TO REMOVE SPACE BETWEEN*/
+.swiper-container{
+    width: 100vw;
+    height: 100vh;
+}
+.swiper{
+    background-color: red;
+    
+}
+
+.slideFit > img{
+    
+}
+
+img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -10;
+}

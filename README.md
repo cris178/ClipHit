@@ -18,3 +18,6 @@ Can use routing for web and mobile apps
 https://www.npmjs.com/package/react-id-swiper
 
 https://react-id-swiper.ashernguyen.site/example/default
+
+
+*Important* In order to remove space in between vertical slides make sure to manually set the height of the swiper container even though the documentation doesn't mention it!
