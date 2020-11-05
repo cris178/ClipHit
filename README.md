@@ -1,6 +1,8 @@
 # ClipHit
 A third party Twitch App.
 
+[ClpiHit](https://cliphit-55928.firebaseapp.com/about)
+
 
 # Place Holder Images
 
