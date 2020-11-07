@@ -2,19 +2,50 @@
    
     display: block;
     overflow: hidden;
+    
 }
 
 /*MOST IMPORTANT PART-NEEED TO SET SWIPER-CONTAINER SIZE IN ORDER TO REMOVE SPACE BETWEEN*/
 .swiper-container{
-    width: 100vw;
-    height: 100vh;
+   width: 100vw;
+   height: 100vh;
+    z-index: 10;
 }
 .swiper{
     background-color: red;
     
 }
 
+iframe{
+    border: none;
+    z-index: 0;
+    overflow: hidden;
+}
+.scrollingHelpLeft{
+    z-index: 10;
+    /*background-color: rgba(156, 128, 3, 0.993);*/
+    position: absolute;
+    left: 0px;
+    width: 45%;
+    height: 80%;
+}
 
+.scrollingHelpRight{
+    z-index: 10;
+    /*background-color: rgba(156, 128, 3, 0.993);*/
+    position: absolute;
+    right: 0px;
+    width: 45%;
+    height: 80%;
+    
+}
+
+
+/*
+.slideFit{
+    position: relative;
+}
+*/
 
 .slideFit > img{
     width: 100vw;
@@ -22,3 +53,4 @@
     object-fit: cover;
     z-index: -10;
 }
+
